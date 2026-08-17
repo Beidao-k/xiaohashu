@@ -1,6 +1,7 @@
 package com.quanxiaoha.xiaohashu.count.biz.domain.mapper;
 
 import com.quanxiaoha.xiaohashu.count.biz.domain.dataobject.UserCountDO;
+import org.apache.ibatis.annotations.Param;
 
 public interface UserCountDOMapper {
     int deleteByPrimaryKey(Long id);
@@ -14,4 +15,11 @@ public interface UserCountDOMapper {
     int updateByPrimaryKeySelective(UserCountDO record);
 
     int updateByPrimaryKey(UserCountDO record);
+
+    //存在幂等问题
+    int insertOrUpdateFansTotalByUserId(@Param("count") Integer count, @Param("userId") Long userId);
+
+    int insertOrUpdateFollowingTotalByUserId(@Param("count") Integer count, @Param("userId") Long userId);
+
+
 }

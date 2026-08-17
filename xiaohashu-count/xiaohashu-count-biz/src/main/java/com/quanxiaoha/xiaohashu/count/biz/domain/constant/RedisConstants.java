@@ -1,16 +1,25 @@
 package com.quanxiaoha.xiaohashu.count.biz.domain.constant;
 
 public class RedisConstants {
+    /**
+     * 用户维度计数 Key 前缀
+     */
+    private static final String COUNT_USER_KEY_PREFIX = "count:user:";
 
-    private static final String FOLLOWING_LIST_KEY_PREFIX = "following:";
-    private static final String USER_FANS_KEY_PREFIX = "fans:";
+    /**
+     * Hash Field: 粉丝总数
+     */
+    public static final String FIELD_FANS_TOTAL = "fansTotal";
+    public static final String FIELD_FOLLOWING_TOTAL = "followingTotal";
 
-    public static String buildFollowingListKey(Long userId) {
-        return FOLLOWING_LIST_KEY_PREFIX + userId;
-    }
 
-    public static String buildUserFansKey(Long userId) {
-        return USER_FANS_KEY_PREFIX + userId;
+    /**
+     * 构建用户维度计数 Key
+     * @param userId
+     * @return
+     */
+    public static String buildCountUserKey(Long userId) {
+        return COUNT_USER_KEY_PREFIX + userId;
     }
 
 }

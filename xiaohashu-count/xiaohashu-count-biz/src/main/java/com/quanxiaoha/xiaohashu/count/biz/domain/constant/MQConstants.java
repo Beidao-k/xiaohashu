@@ -3,19 +3,19 @@ package com.quanxiaoha.xiaohashu.count.biz.domain.constant;
 public interface MQConstants {
 
     /**
-     * Topic: 关注、取关共用一个
+     * Topic:关注计数
      */
-    String TOPIC_FOLLOW_OR_UNFOLLOW = "FollowUnfollowTopic";
+    String TOPIC_COUNT_FOLLOWING="CountFollowingTopic";
 
     /**
-     * 关注标签
+     * Topic:粉丝数计数
      */
-    String TAG_FOLLOW = "Follow";
+    String TOPIC_COUNT_FANS ="CountFansTopic";
 
-    /**
-     * 取关标签
-     */
-    String TAG_UNFOLLOW = "Unfollow";
+    String TOPIC_COUNT_FANS_2_DB = "CountFans2DBTopic";
 
-    public static  final int RATE_LIMIT=5000;
+    String TOPIC_COUNT_FOLLOWING_2_DB = "CountFollowing2DBTopic";
+
+
+
 }

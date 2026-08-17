@@ -85,8 +85,6 @@ public class UserRelationServiceImpl implements UserRelationService {
         }
 
 
-        //TODO 校验被关注者是否存在
-
         boolean userExist = userRpcService.isUserExist(followedUserId);
         if(!userExist){
             throw new BizException(ResponseCodeEnum.FOLLOW_USER_NOT_EXISTED);

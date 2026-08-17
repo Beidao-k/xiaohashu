@@ -2,7 +2,7 @@ package com.quanxiaoha.xiaohashu.count.biz.domain.exception;
 
 import com.quanxiaoha.framework.common.exception.BizException;
 import com.quanxiaoha.framework.common.response.Response;
-import com.quanxiaoha.xiaohashu.user.relation.biz.enums.ResponseCodeEnum;
+import com.quanxiaoha.xiaohashu.count.biz.domain.enums.ResponseCodeEnum;
 import jakarta.servlet.http.HttpServletRequest;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.validation.BindingResult;

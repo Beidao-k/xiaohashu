@@ -17,5 +17,17 @@ public interface MQConstants {
      */
     String TAG_UNFOLLOW = "Unfollow";
 
+    /**
+     * Topic:关注计数
+     */
+    String TOPIC_COUNT_FOLLOWING="CountFollowingTopic";
+
+    /**
+     * Topic:粉丝数计数
+     */
+    String TOPIC_COUNT_FANS ="CountFansTopic";
+
+
     public static  final int RATE_LIMIT=5000;
+
 }
