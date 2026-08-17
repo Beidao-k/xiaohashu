@@ -1,0 +1,3 @@
+============================8.10============================
+问题描述：@Resource
+         private RedisTemplate<String,String> redisTemplate;泛型擦除导入成别的Bean
